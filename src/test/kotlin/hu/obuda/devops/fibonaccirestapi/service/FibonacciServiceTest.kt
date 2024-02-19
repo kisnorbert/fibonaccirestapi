@@ -13,7 +13,25 @@ class FibonacciServiceTest {
         // given
 
         // when
+        val result: Int = underTest.fibonacci(2)
+        // then
+        Assertions.assertEquals(0, result)
+    }
+    @Test
+    fun shouldReturn0WhenCall2() {
+        // given
+
+        // when
         val result: Int = underTest.fibonacci(1)
+        // then
+        Assertions.assertEquals(0, result)
+    }
+    @Test
+    fun shouldReturn2WhenCall3() {
+        // given
+
+        // when
+        val result: Int = underTest.fibonacci(3)
         // then
         Assertions.assertEquals(0, result)
     }
